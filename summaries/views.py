@@ -23,7 +23,7 @@ def upload_view(request):
                 audio_file_path = summary_obj.audio_file.path
 
                 # Ensure the file is uploaded with a display name
-                uploaded_file = genai.upload_file(
+                uploaded_file = genai.files.upload_file(
                     path=audio_file_path,
                     display_name=summary_obj.audio_file.name
                 )
