@@ -1,0 +1,93 @@
+/* summaries/static/summaries/styles.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #606770;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+form p {
+    text-align: left;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.summary-section {
+    text-align: left;
+    margin-top: 30px;
+    border-top: 1px solid #dddfe2;
+    padding-top: 20px;
+}
+
+.summary-section h2 {
+    color: #1c1e21;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f6f7f9;
+    padding: 15px;
+    border-radius: 6px;
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-wrap: break-word;
+    font-family: monospace;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}

@@ -1,0 +1,13 @@
+{% extends "summaries/base.html" %}
+
+{% block content %}
+<div class="card">
+    <h1>Meeting Summarizer</h1>
+    <p>Upload your meeting audio, and we'll transcribe it, summarize it, and pull out the key action items for you.</p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Generate Summary</button>
+    </form>
+</div>
+{% endblock %}

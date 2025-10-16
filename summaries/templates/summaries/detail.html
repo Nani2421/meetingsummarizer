@@ -1,0 +1,24 @@
+{% extends "summaries/base.html" %}
+
+{% block content %}
+<div class="card">
+    <h1>Your Summary is Ready!</h1>
+
+    <div class="summary-section">
+        <h2>Summary</h2>
+        <pre>{{ summary.summary|linebreaksbr }}</pre>
+    </div>
+
+    <div class="summary-section">
+        <h2>Action Items</h2>
+        <pre>{{ summary.action_items|linebreaksbr }}</pre>
+    </div>
+
+    <div class="summary-section">
+        <h2>Full Transcript</h2>
+        <pre>{{ summary.transcript|linebreaksbr }}</pre>
+    </div>
+
+    <a href="{% url 'upload' %}" class="btn">Summarize Another Meeting</a>
+</div>
+{% endblock %}
